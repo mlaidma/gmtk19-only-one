@@ -1,0 +1,85 @@
+design.txt
+
+Only One Enemy
+
+This game is simple, there is one enemy and it has one weakness.
+Find it and destroy him.
+
+Wheel of Attacks
+
+    * Elements
+   	    * Fire		- Fire Damage		- Getting hot in here!
+   	    * Air		- Air Damage		- It's Breathtaking!
+   	    * Earth		- Earth Damage		- Buried Whole
+   	    * Water		- Clear Effects		- Clean as new!
+    * Weapons
+        * Sword		- Cut Damage		- That's rather sharp!
+        * Bow		- Pierce Damage		- That stings!
+        * Mace		- Blunt Damage		- Boink
+        * Shield    - Block				- I'll get you next time!
+	* Magic 
+	    * Stun		- Stun Damage		- Hold on a second!
+	    * Summon	- Summon			- Who invited you!?
+	    * Leech		- Leech Damage		- What is yours is mine!
+	    * Heal		- Healing			- Feeling better already!
+	* Consumable
+	    *			- Resist Elements	- I'm feeling kind of funny!
+	    * 			- Resist Weapons	- You can't hurt me!
+	    * 			- Resist Magic		- Your tricks don't work on me!
+	    * Water		- Redraw Effects	- Surprise!
+
+* The Player and the Enemy will both use the same attacks and actions.
+* The Enemy has per random selection a unique set of traits every time.
+	That makes the enemy susceptible to certain actions or combinations
+	of actions.
+* The Player has randomly selected weaknesses to all types of attacks.
+* The Enemy has a randomly selected preference to some type of attacks.
+* The Enemy has a tolerance to damage and will Redraw Effects when it
+	loses health at a ratio above the tolerance and gets frightened.
+* The player will see the enemies next action in an action queue like
+	the next block in tetris
+
+Control Scheme
+
+* SHIFT to bring up the Wheel
+* WASD to navigate between the types
+* Release SHIFT
+* WASD to apply the action
+
+* Turn based or RT? 
+
+
+First Iteration
+
+* Simple Graphics
+	* Wheel
+	* Icons
+	* Player
+	* Enemy
+* Background
+* Game Scene
+* PlayerController
+	* Keyboard Input
+	* Traits
+* EnemyController
+	* Traits
+	* Action selection
+* Action Mechanics
+
+
+Second Iteration
+
+* Weaknesses
+* Attack preference
+* Frightened Mechanics
+
+Polish 
+
+* Balancing
+* Fancier Graphics
+
+
+
+
+
+
