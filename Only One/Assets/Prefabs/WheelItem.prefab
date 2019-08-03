@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8322688469198446746}
   - component: {fileID: 9079884013050212466}
+  - component: {fileID: 2213753308676462713}
   m_Layer: 0
-  m_Name: Elements
+  m_Name: WheelItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,3 +80,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2213753308676462713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3814424233568709944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7f66f0e774c4074eb2e3dd5900ba5f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

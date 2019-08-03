@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class WheelController : MonoBehaviour
 {
-    [SerializeField] ActionGroup[] actionGroups;
+
+    [SerializeField] WheelIconController[] wheelIcons;
 
     private bool mActive = false;
 
@@ -24,14 +25,35 @@ public class WheelController : MonoBehaviour
     {
         mActive = active;
         this.transform.gameObject.SetActive(mActive);
+
+        if(!active)
+        {
+            setWheelIconsActive(false);
+        }
     }
 
     public ActionGroup getActionGroup(KeyCode key)
     {
-        foreach (ActionGroup actionGroup in actionGroups)
+        setWheelIconsActive(false);
+
+        foreach (WheelIconController wheelIcon in wheelIcons)
         {
-            if (actionGroup.Key == key) return actionGroup;
+            wheelIcon.setActive(false);
+
+            if (wheelIcon.actionGroup.Key == key)
+            {
+                wheelIcon.setActive(true);
+                return wheelIcon.actionGroup;
+            }
         }
         return null;
+    }
+
+    private void setWheelIconsActive(bool active)
+    {
+        foreach (WheelIconController wheelIcon in wheelIcons)
+        {
+            wheelIcon.setActive(active);
+        }
     }
 }

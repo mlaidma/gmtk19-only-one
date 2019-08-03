@@ -10,7 +10,6 @@ public enum ActionType
     Consumable
 }
 
-
 [CreateAssetMenu(menuName = "Action")]
 public class Action : ScriptableObject
 {

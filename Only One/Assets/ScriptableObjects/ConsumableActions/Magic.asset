@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 801156b376fdc9f45910017077b12f9d, type: 3}
-  m_Name: Water 2
+  m_Name: Magic
   m_EditorClassIdentifier: 
-  Key: 0
+  Key: 100
   Type: 3
-  Name: 
-  Slogan: 
+  Name: Magic
+  Slogan: Your tricks don't work on me!

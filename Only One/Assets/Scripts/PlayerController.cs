@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour, IDamageable
 {
-   [SerializeField] WheelController actionWheel;
+    [SerializeField] WheelController actionWheel;
+    [SerializeField] EnemyController enemy;
 
     private bool mShiftPressed = false;
-    private ActionGroup mActionGroup;
+    private ActionGroup mActiveActionGroup;
+    private Traits traits;
 
     // Start is called before the first frame update
     void Start()
@@ -59,12 +61,37 @@ public class PlayerController : MonoBehaviour
         {
             if(mShiftPressed)
             {
-                mActionGroup = actionWheel.getActionGroup(keyPressed);
+                mActiveActionGroup = actionWheel.getActionGroup(keyPressed);
+                Debug.Log("New active action group: " + mActiveActionGroup);
             }
             else
             {
-                
+                Action(keyPressed);
             }
         }
+    }
+
+    void Action(KeyCode key)
+    {
+        if (mActiveActionGroup != null)
+        {
+            foreach (Action action in mActiveActionGroup.Actions)
+            {
+                if(key == action.Key)
+                {
+                    Debug.Log("Player used " + action.Name);
+                    enemy.TakeDamage(action);
+                }
+            }
+        }
+        else
+        {
+            Debug.LogError("No active actiongroup");
+        }
+    }
+
+    public void TakeDamage(Action action)
+    {
+        Debug.Log("Player took damage from " + action.Name);
     }
 }
