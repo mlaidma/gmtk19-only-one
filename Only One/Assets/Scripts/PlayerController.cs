@@ -2,19 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour, IDamageable
+public class PlayerController : Fighter
 {
     [SerializeField] WheelController actionWheel;
     [SerializeField] EnemyController enemy;
 
     private bool mShiftPressed = false;
     private ActionGroup mActiveActionGroup;
-    private Traits traits;
-
+   
     // Start is called before the first frame update
     void Start()
     {
-        
+        Name = "Player";
     }
 
     // Update is called once per frame
@@ -79,8 +78,7 @@ public class PlayerController : MonoBehaviour, IDamageable
             {
                 if(key == action.Key)
                 {
-                    Debug.Log("Player used " + action.Name);
-                    enemy.TakeDamage(action);
+                    Act(action);
                 }
             }
         }
@@ -90,8 +88,10 @@ public class PlayerController : MonoBehaviour, IDamageable
         }
     }
 
-    public void TakeDamage(Action action)
+    private void Act(Action _action)
     {
-        Debug.Log("Player took damage from " + action.Name);
+        Debug.Log("Player used " + _action.Name);
+        enemy.TakeDamage(_action);
     }
+
 }

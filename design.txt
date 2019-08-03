@@ -5,7 +5,7 @@ Only One Enemy
 This game is simple, there is one enemy and it has one weakness.
 Find it and destroy him.
 
-Wheel of Attacks
++ Wheel of Attacks
 
     * Elements
    	    * Fire		- Fire Damage		- Getting hot in here!
@@ -39,7 +39,7 @@ Wheel of Attacks
 * The player will see the enemies next action in an action queue like
 	the next block in tetris
 
-Control Scheme
++ Control Scheme
 
 * SHIFT to bring up the Wheel
 * WASD to navigate between the types
@@ -51,22 +51,20 @@ Control Scheme
 
 First Iteration
 
-* Simple Graphics
-	* Wheel
-	* Icons
-	* Player
-	* Enemy
-* Background
-* Game Scene
++ Simple Graphics
+	+ Wheel
+	+ Icons
+	+ Player
+	+ Enemy
++ Background
++ Game Scene
 * PlayerController
-	* Keyboard Input
-	* Traits
+	+ Keyboard Input
+	* Dealing Damage
 * EnemyController
-	* Traits
 	* Action selection
-* Action Mechanics
+	* Dealing Damage
   
-
 Second Iteration
 
 * Weaknesses

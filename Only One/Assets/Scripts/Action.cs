@@ -17,4 +17,8 @@ public class Action : ScriptableObject
     public ActionType Type;
     public string Name;
     public string Slogan;
+
+    public float damage;
+
+    public Action() => damage = 10f;
 }

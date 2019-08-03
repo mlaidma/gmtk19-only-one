@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ca339f08a8a7ba4ebc2a0b844d6087c, type: 3}
+  m_Name: Traits
+  m_EditorClassIdentifier: 
+  Health: 0
+  WeaponDamage: 0
+  MagicDamage: 0
+  ElementalDamage: 0
+  WeaponResist: 0
+  MagicResist: 0
+  ElementalResist: 0

@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour, IDamageable
+public class EnemyController : Fighter
 {
 
     [SerializeField] PlayerController player;
 
+    [SerializeField] Action fire;
+    
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        Name = "Enemy";
+        StartCoroutine(DealDamage());
     }
 
     // Update is called once per frame
@@ -19,8 +23,14 @@ public class EnemyController : MonoBehaviour, IDamageable
         
     }
 
-    public void TakeDamage(Action action)
+    IEnumerator DealDamage()
     {
-        Debug.Log("Enemy took damage from " + action.Name);
+        while (true)
+        {
+            player.TakeDamage(fire);
+            yield return new WaitForSeconds(2f);
+        }
     }
+
 }
+
