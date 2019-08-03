@@ -15,17 +15,17 @@ Wheel of Attacks
     * Weapons
         * Sword		- Cut Damage		- That's rather sharp!
         * Bow		- Pierce Damage		- That stings!
-        * Mace		- Blunt Damage		- Boink
-        * Shield    - Block				- I'll get you next time!
+        * Mace		- Blunt Damage		- Sleep now, friend!
+        * Shield    - Block				- Not this time!
 	* Magic 
 	    * Stun		- Stun Damage		- Hold on a second!
 	    * Summon	- Summon			- Who invited you!?
 	    * Leech		- Leech Damage		- What is yours is mine!
 	    * Heal		- Healing			- Feeling better already!
 	* Consumable
-	    *			- Resist Elements	- I'm feeling kind of funny!
-	    * 			- Resist Weapons	- You can't hurt me!
-	    * 			- Resist Magic		- Your tricks don't work on me!
+	    * Elements	- Resist Elements	- I'm feeling kind of funny!
+	    * Weapons	- Resist Weapons	- You can't hurt me!
+	    * Magic		- Resist Magic		- Your tricks don't work on me!
 	    * Water		- Redraw Effects	- Surprise!
 
 * The Player and the Enemy will both use the same attacks and actions.

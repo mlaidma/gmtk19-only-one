@@ -10,12 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4775c06b0a0bdef4c99103e6a2ef55a4, type: 3}
-  m_Name: Elements
+  m_Name: ConsumableActions
   m_EditorClassIdentifier: 
-  type: 0
-  Key: 119
-  Actions:
-  - {fileID: 11400000, guid: 76a5350cb362c6d45805f27eae03ae10, type: 2}
-  - {fileID: 11400000, guid: 93c5ff0f39aa0dc43a45a7202a7cab93, type: 2}
-  - {fileID: 11400000, guid: 7f150b3cabe33ae41be14f814b8752fa, type: 2}
-  - {fileID: 11400000, guid: 9b8eda8102379bb459e706632996f6e1, type: 2}
+  type: 3
+  Key: 115
+  Actions: []

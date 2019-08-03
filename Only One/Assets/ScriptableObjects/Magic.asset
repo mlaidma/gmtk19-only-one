@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4775c06b0a0bdef4c99103e6a2ef55a4, type: 3}
-  m_Name: Elements
+  m_Name: Magic
   m_EditorClassIdentifier: 
-  type: 0
-  Key: 119
+  type: 2
+  Key: 100
   Actions:
-  - {fileID: 11400000, guid: 76a5350cb362c6d45805f27eae03ae10, type: 2}
-  - {fileID: 11400000, guid: 93c5ff0f39aa0dc43a45a7202a7cab93, type: 2}
-  - {fileID: 11400000, guid: 7f150b3cabe33ae41be14f814b8752fa, type: 2}
-  - {fileID: 11400000, guid: 9b8eda8102379bb459e706632996f6e1, type: 2}
+  - {fileID: 11400000, guid: 43a9f18681cd3ab48a79addf89d4f4e9, type: 2}
+  - {fileID: 11400000, guid: ed7c48e812a758b42b39a2b33c801ed5, type: 2}
+  - {fileID: 11400000, guid: 2e42fd047b141e94681dc5e609e19b3b, type: 2}
+  - {fileID: 11400000, guid: 42a91ab6da260de4599829def524f17f, type: 2}
