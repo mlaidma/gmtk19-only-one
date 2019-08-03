@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,10 +7,10 @@ public class EnemyController : Fighter
 {
 
     [SerializeField] PlayerController player;
+    [SerializeField] ActionGroup[] actionGroups;
 
-    [SerializeField] Action fire;
+    private Action activeAction;
     
-
     // Start is called before the first frame update
     void Start()
     {
@@ -27,10 +28,19 @@ public class EnemyController : Fighter
     {
         while (true)
         {
-            player.TakeDamage(fire);
+            QueueAction();
             yield return new WaitForSeconds(2f);
+            player.TakeDamage(activeAction);
         }
     }
 
+    private void QueueAction()
+    {
+        ActionGroup ag = actionGroups[Random.Range(0, actionGroups.Length)];
+        Action[] actions = ag.Actions;
+        activeAction = actions[Random.Range(0, actions.Length)];
+
+        Debug.Log(Name + " picked " + activeAction.Name + " as next attack!");
+    }
 }
 

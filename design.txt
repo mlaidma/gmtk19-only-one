@@ -58,21 +58,29 @@ First Iteration
 	+ Enemy
 + Background
 + Game Scene
-* PlayerController
++ PlayerController
 	+ Keyboard Input
-	* Dealing Damage
-* EnemyController
-	* Action selection
-	* Dealing Damage
+	+ Dealing Damage
++ EnemyController
+	+ Action selection
+	+ Dealing Damage
+* Health Bars
+* End Game if health < 0
+* SceneManagement
+	* SceneArt
   
 Second Iteration
 
+* Visualized Attacks
+* Music
+* Sound
 * Weaknesses
 * Attack preference
 * Frightened Mechanics
 
 Polish 
 
+* Tutorial
 * Balancing
 * Fancier Graphics
 

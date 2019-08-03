@@ -93,5 +93,4 @@ public class PlayerController : Fighter
         Debug.Log("Player used " + _action.Name);
         enemy.TakeDamage(_action);
     }
-
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Fighter : MonoBehaviour
 {
-    private float health = s100f;
+    private float health = 100f;
     
     virtual protected string Name { get; set; }
 
@@ -22,6 +22,8 @@ public class Fighter : MonoBehaviour
         if (health <= 0)
         {
             Debug.Log("Game over!");
+            PlayerPrefs.SetString("loser", Name);
+            FindObjectOfType<GameController>().LoadEndScene();
         }
     }
 }
