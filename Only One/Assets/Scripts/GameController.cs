@@ -15,6 +15,14 @@ public class GameController : MonoBehaviour
         DontDestroyOnLoad(transform.gameObject);
     }
 
+    private void Start()
+    {
+        if(SceneManager.GetActiveScene().buildIndex == endSceneIndex)
+        {
+            SetGameOverText();
+        }
+    }
+
     public void LoadStartScene()
     {
         SceneManager.LoadScene(startSceneIndex);
@@ -28,5 +36,24 @@ public class GameController : MonoBehaviour
     public void LoadEndScene()
     {
         SceneManager.LoadScene(endSceneIndex);
+    }
+
+    private void SetGameOverText()
+    {
+        const string youWonText = "Congratulations! \n You have slain the fearsome beast!";
+        const string youLostText = "ha ha ha ha! \n The mighty beast got the better of you!";
+
+        GameResult result = FindObjectOfType<GameResult>();
+
+        bool playerWon = (PlayerPrefs.GetString("loser") == "Enemy" ? true : false );
+
+        if(playerWon)
+        {
+            result.SetText(youWonText);
+        }
+        else
+        {
+            result.SetText(youLostText);
+        }
     }
 }

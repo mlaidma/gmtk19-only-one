@@ -26,8 +26,8 @@ public class Fighter : MonoBehaviour
         if (health <= 0)
         {
             Debug.Log("Game over!");
-            //PlayerPrefs.SetString("loser", Name);
-            //FindObjectOfType<GameController>().LoadEndScene();
+            PlayerPrefs.SetString("loser", Name);
+            FindObjectOfType<GameController>().LoadEndScene();
         }
     }
 }
