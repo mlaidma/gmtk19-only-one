@@ -18,7 +18,19 @@ public class Action : ScriptableObject
     public string Name;
     public string Slogan;
 
-    public float damage;
+    [SerializeField] float baseDamage;
 
-    public Action() => damage = 10f;
+    private float damage;
+    
+    public Action() => baseDamage = 10f;
+
+    public float GetDamageTaken(float modifier)
+    {
+        return damage / modifier;
+    }
+
+    public void SetDamageDealt(float modifier)
+    {
+        damage = baseDamage * modifier;
+    }
 }

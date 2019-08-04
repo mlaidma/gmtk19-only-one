@@ -16,3 +16,4 @@ MonoBehaviour:
   Type: 2
   Name: Heal
   Slogan: Feeling better already!
+  baseDamage: -20

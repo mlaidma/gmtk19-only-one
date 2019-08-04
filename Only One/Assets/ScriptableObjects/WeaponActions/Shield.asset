@@ -16,3 +16,4 @@ MonoBehaviour:
   Type: 0
   Name: Shield
   Slogan: Not this time!
+  baseDamage: 0

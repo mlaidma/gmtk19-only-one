@@ -66,14 +66,15 @@ First Iteration
 	+ Dealing Damage
 + Health Bars
 + End Game if health < 0
-* SceneManagement
-	* SceneArt
++ SceneManagement
+	+ SceneArt
   
 Second Iteration
 
 * Visualized Attacks
 * Music
 * Sound
+
 * Weaknesses
 * Attack preference
 * Frightened Mechanics

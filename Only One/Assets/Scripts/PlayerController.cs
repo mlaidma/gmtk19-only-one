@@ -14,6 +14,9 @@ public class PlayerController : Fighter
     void Start()
     {
         Name = "Player";
+
+        stats = new FighterStats();
+        stats.DrawStats();
     }
 
     // Update is called once per frame
@@ -91,6 +94,11 @@ public class PlayerController : Fighter
     private void Act(Action _action)
     {
         Debug.Log("Player used " + _action.Name);
+        attackText.text = _action.Slogan;
+
+        float damageDealtModifier = stats.GetDamageDealtModifier(_action);
+        _action.SetDamageDealt(damageDealtModifier);
+        
         enemy.TakeDamage(_action);
     }
 }

@@ -16,3 +16,4 @@ MonoBehaviour:
   Type: 3
   Name: Water
   Slogan: Surprise!
+  baseDamage: -10

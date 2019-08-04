@@ -16,3 +16,4 @@ MonoBehaviour:
   Type: 0
   Name: Water
   Slogan: Time to get clean!
+  baseDamage: -10

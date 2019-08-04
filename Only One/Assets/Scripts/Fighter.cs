@@ -1,24 +1,43 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Fighter : MonoBehaviour
 {
-    private float health = 100f;
+     public float health
+    {
+        get
+        {
+            return stats.health;
+        }
+        set
+        {
+            stats.health = value;
+        }
+    }
     
     virtual protected string Name { get; set; }
 
     [SerializeField] HealthBar healthbar;
+    [SerializeField] protected TextMeshProUGUI attackText;
+
+    protected FighterStats stats;
 
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     public void TakeDamage(Action action)
     {
-        health -= action.damage;
-        Debug.Log(Name + " took damage " + action.damage + " from " + action.Name);
+        float damageTakenModifier = stats.GetDamageTakenModifier(action);
+        float damageTaken = action.GetDamageTaken(damageTakenModifier);
+
+        health -= damageTaken;
+
+        Debug.Log(Name + " took damage " + damageTaken + " from " + action.Name);
         Debug.Log(Name + "health now: " + health);
 
         healthbar.updateHealth(health);
@@ -30,4 +49,5 @@ public class Fighter : MonoBehaviour
             FindObjectOfType<GameController>().LoadEndScene();
         }
     }
+
 }
