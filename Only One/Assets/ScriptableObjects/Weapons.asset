@@ -19,5 +19,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5e9a34ce9ea8c0f4bb3832707088186c, type: 2}
   - {fileID: 11400000, guid: d295b674f647ed94baa1fd747e7ebd67, type: 2}
   - {fileID: 11400000, guid: f73d72dde94879e47bf5b7ee82987ea9, type: 2}
-  inactiveSprite: {fileID: 21300000, guid: ea5e572213139a74ea8f4825fd29b6bc, type: 3}
-  activeSprite: {fileID: 21300000, guid: 2355277dc411b8a4e8fad11397a3f6c8, type: 3}
+  inactiveSprite: {fileID: 21300000, guid: 017cf1f95f5b04c45bb5210d97c2f0b0, type: 3}
+  activeSprite: {fileID: 21300000, guid: 6dfeb9687e7dc8d4a940e5d7b539f11d, type: 3}
