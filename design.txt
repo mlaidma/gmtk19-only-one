@@ -65,7 +65,7 @@ First Iteration
 	+ Action selection
 	+ Dealing Damage
 * Health Bars
-* End Game if health < 0
++ End Game if health < 0
 * SceneManagement
 	* SceneArt
   

@@ -8,6 +8,8 @@ public class Fighter : MonoBehaviour
     
     virtual protected string Name { get; set; }
 
+    [SerializeField] HealthBar healthbar;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +21,13 @@ public class Fighter : MonoBehaviour
         Debug.Log(Name + " took damage " + action.damage + " from " + action.Name);
         Debug.Log(Name + "health now: " + health);
 
+        healthbar.updateHealth(health);
+
         if (health <= 0)
         {
             Debug.Log("Game over!");
-            PlayerPrefs.SetString("loser", Name);
-            FindObjectOfType<GameController>().LoadEndScene();
+            //PlayerPrefs.SetString("loser", Name);
+            //FindObjectOfType<GameController>().LoadEndScene();
         }
     }
 }

@@ -8,11 +8,11 @@ public class WheelIconController : MonoBehaviour
 
     SpriteRenderer spriteRenderer;
 
-    private void Start()
+    private void Awake()
     {
+
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
-
     public void setActive(bool _active)
     {
         if (_active) spriteRenderer.sprite = actionGroup.activeSprite;
