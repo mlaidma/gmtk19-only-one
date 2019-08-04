@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Magic
   m_EditorClassIdentifier: 
   Key: 100
-  Type: 3
+  ActionClass: 0
+  ActionType: 0
   Name: Magic
   Slogan: Your tricks don't work on me!
+  Sprite: {fileID: 21300000, guid: 23b03a637f253da44b32155638e78fea, type: 3}
+  baseDamage: 10

@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Sword
   m_EditorClassIdentifier: 
   Key: 119
-  Type: 1
+  ActionClass: 0
+  ActionType: 0
   Name: Sword
   Slogan: That's rather sharp!
+  Sprite: {fileID: 21300000, guid: eb84ae552af01754a93e72beb68104b5, type: 3}
+  baseDamage: 10

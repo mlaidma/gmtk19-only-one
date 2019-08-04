@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Mace
   m_EditorClassIdentifier: 
   Key: 100
-  Type: 1
+  ActionClass: 0
+  ActionType: 0
   Name: Mace
   Slogan: Sleep now, friend!
+  Sprite: {fileID: 21300000, guid: 9ddc925837f06284796c762bcc36d825, type: 3}
+  baseDamage: 10

@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Air
   m_EditorClassIdentifier: 
   Key: 97
-  Type: 0
+  ActionClass: 0
+  ActionType: 0
   Name: Air
   Slogan: It's Breathtaking!
+  Sprite: {fileID: 21300000, guid: 92e6d9390cefc984cbdd65ebf758f949, type: 3}
+  baseDamage: 10

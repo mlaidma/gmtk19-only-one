@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Water
   m_EditorClassIdentifier: 
   Key: 115
-  Type: 0
+  ActionClass: 0
+  ActionType: 1
   Name: Water
   Slogan: Time to get clean!
+  Sprite: {fileID: 21300000, guid: bb38d971b5db0f448872c9b8147be017, type: 3}
   baseDamage: -10

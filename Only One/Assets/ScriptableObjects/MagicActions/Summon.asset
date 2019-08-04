@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Summon
   m_EditorClassIdentifier: 
   Key: 100
-  Type: 2
+  ActionClass: 0
+  ActionType: 0
   Name: Summon
   Slogan: Who invited you?!
+  Sprite: {fileID: 21300000, guid: 57b956e87c3b83f49be681c99af23224, type: 3}
+  baseDamage: 10

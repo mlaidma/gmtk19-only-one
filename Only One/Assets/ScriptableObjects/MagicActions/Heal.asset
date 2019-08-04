@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Heal
   m_EditorClassIdentifier: 
   Key: 115
-  Type: 2
+  ActionClass: 0
+  ActionType: 1
   Name: Heal
   Slogan: Feeling better already!
+  Sprite: {fileID: 21300000, guid: 7be8567c1946daa46a9c4871307c2176, type: 3}
   baseDamage: -20

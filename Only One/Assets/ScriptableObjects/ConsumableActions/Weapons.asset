@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Weapons
   m_EditorClassIdentifier: 
   Key: 97
-  Type: 3
+  ActionClass: 0
+  ActionType: 0
   Name: Weapons
   Slogan: You can't hurt me!
+  Sprite: {fileID: 21300000, guid: 7939659f7282f7e4fb20ffe095868fa9, type: 3}
+  baseDamage: 10

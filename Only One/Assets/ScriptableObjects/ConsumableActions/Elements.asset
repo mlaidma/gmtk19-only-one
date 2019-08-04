@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Elements
   m_EditorClassIdentifier: 
   Key: 119
-  Type: 3
+  ActionClass: 0
+  ActionType: 0
   Name: Elements
   Slogan: I'm not afraid of nature!
+  Sprite: {fileID: 21300000, guid: 5ec7416bb6c4d9d42a91135bae9e9d18, type: 3}
+  baseDamage: 10

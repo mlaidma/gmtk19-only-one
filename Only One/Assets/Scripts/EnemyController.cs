@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class EnemyController : Fighter
 {
-
-    [SerializeField] PlayerController player;
+   
     [SerializeField] ActionGroup[] actionGroups;
     
     private Action activeAction;
@@ -19,7 +18,7 @@ public class EnemyController : Fighter
         stats = new FighterStats();
         stats.DrawStats();
 
-        StartCoroutine(DealDamage());
+        StartCoroutine(DoAction());
     }
 
     // Update is called once per frame
@@ -28,7 +27,7 @@ public class EnemyController : Fighter
         
     }
 
-    IEnumerator DealDamage()
+    IEnumerator DoAction()
     {
         while (true)
         {
@@ -36,7 +35,7 @@ public class EnemyController : Fighter
             yield return new WaitForSeconds(2f + Random.Range(-1f, 1f));
             float damageDealtModifier = stats.GetDamageDealtModifier(activeAction);
             activeAction.SetDamageDealt(damageDealtModifier);
-            player.TakeDamage(activeAction);
+            Act(activeAction);
         }
     }
 

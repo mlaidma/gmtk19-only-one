@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum ActionType
+public enum ActionClass
 {
     Elemental,
     Weapon,
@@ -10,13 +10,21 @@ public enum ActionType
     Consumable
 }
 
+public enum ActionType
+{
+    Attack,
+    Defense
+}
+
 [CreateAssetMenu(menuName = "Action")]
 public class Action : ScriptableObject
 {
     public KeyCode Key;
-    public ActionType Type;
+    public ActionClass ActionClass;
+    public ActionType ActionType;
     public string Name;
     public string Slogan;
+    public Sprite Sprite;
 
     [SerializeField] float baseDamage;
 

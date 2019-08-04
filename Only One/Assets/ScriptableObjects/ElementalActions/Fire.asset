@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Fire
   m_EditorClassIdentifier: 
   Key: 119
-  Type: 0
+  ActionClass: 0
+  ActionType: 0
   Name: Fire
   Slogan: It's gettng hot in here!
+  Sprite: {fileID: 21300000, guid: b2c88d064b16e894fbe0bc5110c3cd40, type: 3}
+  baseDamage: 10

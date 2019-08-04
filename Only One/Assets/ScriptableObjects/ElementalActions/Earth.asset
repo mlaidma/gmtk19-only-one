@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Earth
   m_EditorClassIdentifier: 
   Key: 100
-  Type: 0
+  ActionClass: 0
+  ActionType: 0
   Name: Earth
-  Slogan: Buried whole!
+  Slogan: Buried alive!
+  Sprite: {fileID: 21300000, guid: b2e12a8c31847784dbc590b0f84c40f2, type: 3}
+  baseDamage: 10

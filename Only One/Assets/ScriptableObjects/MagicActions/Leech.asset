@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Leech
   m_EditorClassIdentifier: 
   Key: 97
-  Type: 2
+  ActionClass: 0
+  ActionType: 0
   Name: Leech
   Slogan: What's yours is mine!
+  Sprite: {fileID: 21300000, guid: f057d7d54975e1a4d90df23c998fb5fd, type: 3}
+  baseDamage: 10

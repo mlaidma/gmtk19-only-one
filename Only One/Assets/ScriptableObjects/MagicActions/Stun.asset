@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Stun
   m_EditorClassIdentifier: 
   Key: 119
-  Type: 2
+  ActionClass: 0
+  ActionType: 0
   Name: Stun
   Slogan: Hold on a second!
+  Sprite: {fileID: 21300000, guid: 217d2399a2888bd4eb0f247e167e582f, type: 3}
+  baseDamage: 10

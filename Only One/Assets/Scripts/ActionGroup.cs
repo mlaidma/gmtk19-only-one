@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "ActionGroup")]
 public class ActionGroup : ScriptableObject
 {
-    public ActionType type;
+    public ActionClass type;
     public KeyCode Key;
     public Action[] Actions;
 

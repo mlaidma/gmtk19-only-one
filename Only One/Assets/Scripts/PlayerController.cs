@@ -5,7 +5,6 @@ using UnityEngine;
 public class PlayerController : Fighter
 {
     [SerializeField] WheelController actionWheel;
-    [SerializeField] EnemyController enemy;
 
     private bool mShiftPressed = false;
     private ActionGroup mActiveActionGroup;
@@ -89,16 +88,5 @@ public class PlayerController : Fighter
         {
             Debug.LogError("No active actiongroup");
         }
-    }
-
-    private void Act(Action _action)
-    {
-        Debug.Log("Player used " + _action.Name);
-        attackText.text = _action.Slogan;
-
-        float damageDealtModifier = stats.GetDamageDealtModifier(_action);
-        _action.SetDamageDealt(damageDealtModifier);
-        
-        enemy.TakeDamage(_action);
     }
 }
