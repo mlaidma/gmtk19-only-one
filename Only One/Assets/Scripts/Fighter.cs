@@ -35,7 +35,9 @@ public class Fighter : MonoBehaviour
         float damageTakenModifier = stats.GetDamageTakenModifier(action);
         float damageTaken = action.GetDamageTaken(damageTakenModifier);
 
-        health -= damageTaken;
+        float newHealth = Mathf.Clamp(health - damageTaken, 0f, 100f);
+
+        health = newHealth;
 
         Debug.Log(Name + " took damage " + damageTaken + " from " + action.Name);
         Debug.Log(Name + "health now: " + health);
